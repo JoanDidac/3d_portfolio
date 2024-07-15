@@ -7,6 +7,10 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+//4CNT_Gbbqhq1-wBnO
+//template_dwphb17
+//service_swhizcn
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -16,10 +20,50 @@ const Contact = () => {
   });
   const [ loading, setLoading ] = useState(false);
 
-  const handleChange = (e) => {}
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setForm({...form, [name]: value })
+  }
 
-  const handleSubmit = (e) => {}
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
 
+    //4CNT_Gbbqhq1-wBnO
+//template_dwphb17
+//service_swhizcn
+
+
+    emailjs.send(
+      'service_swhizcn',
+      'template_dwphb17' , 
+      {
+        from_name: 'form.name',
+        to_name: 'JoanDi',
+        from_email: form.email,
+        to_email: 'joandidachr@gmail.com',
+        message: form.message,
+      },
+      '4CNT_Gbbqhq1-wBnO'
+      ) 
+      .then(() => {
+        setLoading(false);
+        alert('Thanks! Your message is travelling at ludacrous speeds to reach me, I will contact you back as soon as possible.༄˖°.🪐.ೃ࿔*:･ ');
+
+        setForm({
+          name:'',
+          email: '',
+          message:'',       
+         })
+        }, (error) => {
+          setLoading(false)
+
+          console.log(error);
+
+          alert('Sorry.Something went wrong  :S ')
+        })
+  }
+ 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div 
