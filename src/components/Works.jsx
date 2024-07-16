@@ -26,7 +26,7 @@ const ProjectCard = ({ index, name , description, tags, image, source_code_link}
         <div className='absolute inset-0 flex justify-end m-3 card-img_hover' >
           <div 
            onClick={() => window.open (source_code_link, "_blank")}
-           className='drop-shadow-[0px_0px_0.3px_rgba(212,212,212,10.25)] hover:drop-shadow-[1.5px_2px_1.3px_rgba(140,20,252,1)]  black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ' 
+           className='drop-shadow-[0px_0px_0.3px_rgba(212,212,212,10.25)] hover:drop-shadow-[1.5px_2px_0.1px_rgba(140,20,252,1)]  black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ' 
            >
            <img 
              src={github}

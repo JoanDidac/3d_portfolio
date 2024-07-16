@@ -167,26 +167,26 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+        "I thought it was impossible to make a websites as beautiful as our product, but Joandi proved me wrong.",
+      name: "Patricia Aroca",
+      designation: "CEO",
+      company: "Amalgama Digital",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "I've never met a web developer who truly cares about their client's success like Joandi does.",
+      name: "Mia Garzón",
+      designation: "CGF",
+      company: "Typeform",
+      image: "https://randomuser.me/api/portraits/women/23.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
+        "After Joandi optimized our e-commerce, our sales increased by 30%. We can't thank him enough!",
+      name: "Zoa Wang",
+      designation: "CFO",
+      company: "Typeform",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
@@ -237,7 +237,7 @@ import {
     {
       name: "Ninja Havoc 美 ~ 🥷 ",
       description:
-        " Join our stealthy ninja Hattori Hanzo as he skillfully defends his town from the relentless samurai menace. This engaging and dynamic game was built as first project at Ironhack using HTML5 Canvas and pure JavaScript, trying to provide a smooth and responsive gaming experience Arcade style.",
+        "Join Hattori Hanzo as he skillfully defends his town from the relentless samurai menace in this Arcade styled, engaging and dynamic game built as first project at Ironhack using HTML5 Canvas and pure JavaScript.",
       tags: [
         {
           name: "JavaScript",
