@@ -26,12 +26,12 @@ const ProjectCard = ({ index, name , description, tags, image, source_code_link}
         <div className='absolute inset-0 flex justify-end m-3 card-img_hover' >
           <div 
            onClick={() => window.open (source_code_link, "_blank")}
-           className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ' 
+           className='drop-shadow-[0px_0px_0.3px_rgba(212,212,212,10.25)] hover:drop-shadow-[1.5px_2px_1.3px_rgba(140,20,252,1)]  black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ' 
            >
            <img 
              src={github}
              alt='github'
-             className='w-1/2 h-1/2 object-contain'
+             className='w-[80%] object-contain'
              />
 
           </div>
