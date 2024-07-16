@@ -26,7 +26,7 @@ const ExperienceCard = ({experience}) => (
   >
   <div>
     <h3 className=" text-white text-[24px] font-bold">{experience.title}</h3>
-    <p className="text-secondary text-[60px] fomt-semibold" style={{margin:0}} >
+    <p className="text-secondary text-[60px] font-semibold" style={{margin:0}} >
     {experience.company_name}</p>
   </div>
   <ul className="mt-5 list-disc space-y-2"> {experience.points.map((point, index ) => (
@@ -46,12 +46,11 @@ const ExperienceCard = ({experience}) => (
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText} > Achievements so far
-        Introduction </p>
-        <h2 className={styles.sectionHeadText}> Work Experience </h2>
+      <motion.div variants={textVariant()} className="pl-[30%] ">
+      <p className={styles.sectionSubText} > What have I done you ask ?</p>
+        <h2 className={styles.sectionHeadText} > Work Experience </h2>
       </motion.div>
-        <div className="mt-20 flex flex-col" >
+        <div className="pl-[100px] mt-20 flex flex-col  " >
           <VerticalTimeline>
             {experiences.map((experience,index) => (
               <ExperienceCard key={index} experience={experience} />

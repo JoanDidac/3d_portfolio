@@ -3,12 +3,12 @@ import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import { fadeIn, textVariant } from '../utils/motion';
 
 const ServiceCard = ( { index, title, icon }) => {
   return (
-    <Tilt className='xs:w-[250px] 2-full' >
+    <Tilt className='xs:w-[250px] w-full ' >
     <motion.div 
      variants={ fadeIn('right', "spring", 0.5 * index, 0.75)}
      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -38,8 +38,8 @@ const ServiceCard = ( { index, title, icon }) => {
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant}>
+    < >
+      <motion.div variants={textVariant} className='ml-[6.5%]'>
         <p className={styles.sectionSubText} >
         Introduction </p>
         <h2 className={styles.sectionHeadText}>
@@ -48,12 +48,12 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]' 
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] className ml-[6.5%]' 
         >
         My name is Joan Didac Hernandez 👋 <br/>
-        I'm a full-stack web developer, leveraging my past experience in Facilities Management and the culinary industry to bring a unique perspective to tech solutions. I graduated from Ironhack Barcelona's web development bootcamp and have a strong grasp of the MERN stack.
+        I'm a full-stack web developer, leveraging my past experience in Facilities Management and the culinary industry to bring a unique perspective to tech solutions. 
       </motion.p>
-       <div className='mt-20 flex flex-wrap gap-10'  >
+       <div className='w-[110%] mt-20 flex flex-wrap gap-10 justify-center  size-full '  >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} /> //To change the content refer to const services in index.js
         ))}

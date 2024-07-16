@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 const ProjectCard = ({ index, name , description, tags, image, source_code_link}) => {
   return (
      <motion.div 
-     variants={fadeIn("up", "spring", index * 0.5, 0.75)}>hola
+     variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
      <Tilt 
      options={{
       max: 45,
@@ -23,7 +23,7 @@ const ProjectCard = ({ index, name , description, tags, image, source_code_link}
         alt={name}  
         className='w-full h-full object-cover rounded-2xl'  
         />
-        <div className='absolute inset-0 flex justify-end margin-3 card-img_hover' >
+        <div className='absolute inset-0 flex justify-end m-3 card-img_hover' >
           <div 
            onClick={() => window.open (source_code_link, "_blank")}
            className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ' 
@@ -63,13 +63,13 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText} > 
+      <p className={`${styles.sectionSubText} ml-4`} > 
         My Projects
          </p>
-        <h2 className={styles.sectionHeadText}> Projects. </h2>
+        <h2 className={`${styles.sectionHeadText} ml-4`}> Projects. </h2>
       </motion.div>
 
-      <div className='w-full flex'>
+      <div className='w-full flex ml-4'>
         <motion.p
         variants={fadeIn ('','',0.1,1)}
         className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
