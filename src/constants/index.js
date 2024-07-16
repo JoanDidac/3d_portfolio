@@ -21,9 +21,9 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    skypulse,
+    foodfolio,
+    ninja,
     threejs,
   } from "../assets";
   
@@ -44,15 +44,15 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "React Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "JavaScript Player",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "FullStack Developer",
       icon: backend,
     },
     {
@@ -193,67 +193,67 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Sky Pulse",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation.",
+        "Web-based platform that allows users to login,search, share, and manage content about drone technology, photography, providing a convenient platform for amateurs and professionals to connect.",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "MongoDb",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "CSS3",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: skypulse,
+      source_code_link: "https://github.com/JoanDidac/frontend-template-m3",
     },
     {
-      name: "Job IT",
+      name: "Food Folio",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Mobile first App that enables users to search for recipies in a huge database nurished and curated by users. Full CRUD with likes and favourites so users can build up a personalized recipe book.",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "MongoDB",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "CSS3",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: foodfolio,
+      source_code_link: "https://food-folio-app.fly.dev/",
     },
     {
-      name: "Trip Guide",
+      name: "Ninja Havoc 美 ~ 🥷 ",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        " Join our stealthy ninja Hattori Hanzo as he skillfully defends his town from the relentless samurai menace. This engaging and dynamic game was built as first project at Ironhack using HTML5 Canvas and pure JavaScript, trying to provide a smooth and responsive gaming experience Arcade style.",
       tags: [
         {
-          name: "nextjs",
+          name: "JavaScript",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "html",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "CSS3",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: ninja,
+      source_code_link: "https://github.com/JoanDidac/Ninja-",
     },
   ];
   
