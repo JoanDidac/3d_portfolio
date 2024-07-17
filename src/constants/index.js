@@ -158,10 +158,11 @@ import {
       iconBg: "#383E56",
       date: "October 2022 - April 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Designing, developing and maintaining web applications using React.js and other related technologies for https://amalgama.co/",
         "Collaborating with cross-functional international teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Direct contact with clients from scratch to delivery in both the English and the French divisions ensuring client satisfaction by building customized solutions using a broad spectrum of technologies.",
+        
       ],
     },
   ];
@@ -169,7 +170,7 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a websites as beautiful as our product, but Joandi proved me wrong.",
+        "I thought it was impossible to make a websites as beautiful as some of our ideas, but Joandi proved me wrong.",
       name: "Patricia Aroca",
       designation: "CEO",
       company: "Amalgama Digital",
