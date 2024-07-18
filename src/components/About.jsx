@@ -34,26 +34,24 @@ const ServiceCard = ( { index, title, icon }) => {
     </motion.div>
   </Tilt>
   )
-}
+} 
 
 const About = () => {
   return (
     < >
-      <motion.div variants={textVariant} className='ml-[6.5%]'>
-        <p className={styles.sectionSubText} >
-        Introduction </p>
-        <h2 className={styles.sectionHeadText}>
-          Overview
+      <motion.div variants={textVariant} className='text-left ml-[90px] xs:ml-[15%]'>
+        <p className={styles.sectionSubText} >Introduction </p>
+        <h2 className={styles.sectionHeadText}>Overview
         </h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] className ml-[6.5%]' 
+        className='text-left mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] xs: ml-[15%] ' 
         >
         My name is Joan Didac Hernandez 👋 <br/>
         I'm a full-stack web developer, leveraging my past experience in Facilities Management and the culinary industry to bring a unique perspective to tech solutions. 
       </motion.p>
-       <div className='w-[110%] mt-20 flex flex-wrap gap-10 justify-center  size-full '  >
+       <div className='w-[100%] mt-16 flex flex-wrap items-center justify-center size-full  gap-10 xl:ml-[66.6px]  '  >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} /> //To change the content refer to const services in index.js
         ))}

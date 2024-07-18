@@ -56,7 +56,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "UX/UI Content Creator",
       icon: creator,
     },
   ];
