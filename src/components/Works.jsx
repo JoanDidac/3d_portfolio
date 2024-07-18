@@ -16,7 +16,7 @@ const ProjectCard = ({ index, name , description, tags, image, source_code_link}
       scale: 1,
       speed: 450
      }} 
-     className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full" >
+     className="bg-tertiary p-5 rounded-2xl md:max-w-[360px] sm:w-[450px] w-full" >
       <div className='relative w-full h-[230px]' >
         <img 
         src={image}
@@ -31,7 +31,7 @@ const ProjectCard = ({ index, name , description, tags, image, source_code_link}
            <img 
              src={github}
              alt='github'
-             className='w-[80%] object-contain'
+             className='w-[0%] object-contain'
              />
 
           </div>
@@ -62,27 +62,28 @@ const ProjectCard = ({ index, name , description, tags, image, source_code_link}
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-      <p className={`${styles.sectionSubText} ml-4`} > 
+      <motion.div className='text-center' variants={textVariant()}>
+      <p className={`${styles.sectionSubText} ml-4 xs:mx-[-20px]`} > 
         My Projects
          </p>
-        <h2 className={`${styles.sectionHeadText} ml-4`}> Projects. </h2>
+        <h2 className={`${styles.sectionHeadText} ml-4 xs:mx-[-20px]`}> 
+        Projects. </h2>
       </motion.div>
 
-      <div className='w-full flex ml-4'>
+      <div className='w-full justify-center flex xs:mx-[-20px] p-0'>
         <motion.p
         variants={fadeIn ('','',0.1,1)}
-        className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-3 text-center text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
           links to code repositories . It reflects my
           ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          and manage projects effectively alone, as well as part of a team.
 
         </motion.p>
       </div>
-        <div className='mt-20 flex flex-wrap gap-7' >
+        <div className=' justify-center ml-[0px] mt-20 flex flex-wrap gap-7 ' >
         {projects.map((project,index) => (
           <ProjectCard 
           key={`project-${index}`}
