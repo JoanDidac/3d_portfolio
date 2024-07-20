@@ -170,7 +170,7 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a websites as beautiful as some of our ideas, but Joandi proved me wrong.",
+        "I thought it was not possible to bring to life some of our crazy designs for a client... He proved me wrong!",
       name: "Patricia Aroca",
       designation: "CEO",
       company: "Amalgama Digital",
@@ -186,7 +186,7 @@ import {
     },
     {
       testimonial:
-        "After Joandi optimized our e-commerce, our sales increased by 30%. We can't thank him enough!",
+        "After Joandi joined our team our delivery on projects speed up significantly. Definitely a team player.",
       name: "Zoa Wang",
       designation: "CFO",
       company: "King",
