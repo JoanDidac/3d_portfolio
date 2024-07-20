@@ -26,12 +26,16 @@ const ProjectCard = ({ index, name , description, tags, image, source_code_link}
         <div className='absolute inset-0 flex justify-end m-3 card-img_hover' >
           <div 
            onClick={() => window.open (source_code_link, "_blank")}
-           className='drop-shadow-[0px_0px_0.3px_rgba(212,212,212,10.25)] hover:drop-shadow-[1.5px_2px_0.1px_rgba(140,20,252,1)]  black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ' 
+           className='shadow-inner hover:ring-1 hover:ring-purple-500 hover:ring-opacity-50 transition-all duration-300 ease-in-out black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer relative
+before:absolute before:inset-0 before:rounded-full before:ring-1 before:ring-blue-500 before:ring-opacity-50 before:transition-all before:duration-500 hover:before:scale-110
+after:absolute after:inset-0 after:rounded-full after:ring-2 after:ring-pink-500 after:ring-opacity-50 after:transition-all after:duration-700 hover:after:scale-125'
+ 
+
            >
            <img 
              src={github}
              alt='github'
-             className='w-[0%] object-contain'
+             className='w-[80%] object-contain '
              />
 
           </div>
@@ -63,17 +67,17 @@ const Works = () => {
   return (
     <>
       <motion.div className='text-center' variants={textVariant()}>
-      <p className={`${styles.sectionSubText} ml-4 xs:mx-[-20px]`} > 
+      <p className={`${styles.sectionSubText} xs: ml-[-33px]`} > 
         My Projects
          </p>
-        <h2 className={`${styles.sectionHeadText} ml-4 xs:mx-[-20px]`}> 
+        <h2 className={`${styles.sectionHeadText} xs: ml-[-33px]`}> 
         Projects. </h2>
       </motion.div>
 
       <div className='w-full justify-center flex xs:mx-[-20px] p-0'>
         <motion.p
         variants={fadeIn ('','',0.1,1)}
-        className='mt-3 text-center text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-10 text-center text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -83,7 +87,7 @@ const Works = () => {
 
         </motion.p>
       </div>
-        <div className=' justify-center ml-[0px] mt-20 flex flex-wrap gap-7 ' >
+        <div className=' mt-20 flex flex-wrap gap-5 ' >
         {projects.map((project,index) => (
           <ProjectCard 
           key={`project-${index}`}
