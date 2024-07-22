@@ -40,7 +40,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
 
 const Feedbacks = () => {
   return (
-    <div className='mt-12 bg-black-100 rounded-[20px]'>
+    <div className='xl:translate-x-[20px] mt-12 bg-black-100 rounded-[20px] xs:ml-[-56px]'>
     <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
     <motion.div
       variants={textVariant()}

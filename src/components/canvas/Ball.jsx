@@ -6,13 +6,14 @@ import CanvasLoader from '../Loader';
 
 const Ball = (props) => {
  const [decal] = useTexture([props.imgUrl]);
+//  console.log('Decal Texture:', decal);
 
  return (
-  <Float speed={0.1} rotationIntensity={1} floatIntensity={1}>
+  <Float speed={1.75} rotationIntensity={1} floatIntensity={2 }>
     <ambientLight intensity={0.25} />
     <directionalLight position={[0, 0, 0.05]} />
     <mesh castShadow receiveShadow scale={2.75}>
-      <icosahedronGeometry args={[1, 2]} />
+      <icosahedronGeometry args={[1, 2 ]} />
       <meshStandardMaterial
         color='#fff8eb'
         polygonOffset
@@ -25,6 +26,7 @@ const Ball = (props) => {
         scale={1}
         map={decal}
         flatShading
+        
       />
     </mesh>
   </Float>
@@ -46,6 +48,7 @@ return (
 
     <Preload all />
   </Canvas>
+  
 );
 };
 

@@ -10,13 +10,13 @@ import {
     html,
     css,
     reactjs,
-    redux,
+    jasmine,
     tailwind,
     nodejs,
     mongodb,
     git,
     figma,
-    docker,
+    postman,
     typeform,
     amalgama,
     ironhack,
@@ -105,6 +105,14 @@ import {
     {
       name: "figma",
       icon: figma,
+    },
+    {
+      name: "jasmine",
+      icon: jasmine,
+    },
+    {
+      name: "postman",
+      icon: postman,
     },
     
   ];

@@ -87,7 +87,7 @@ const Works = () => {
 
         </motion.p>
       </div>
-        <div className=' mt-20 flex flex-wrap gap-5 ' >
+        <div className='xl:translate-x-[10] mt-20 flex flex-wrap gap-5 xs:min-w-[112%] xs:translate-x-[-40px]' >
         {projects.map((project,index) => (
           <ProjectCard 
           key={`project-${index}`}
@@ -100,5 +100,8 @@ const Works = () => {
     </>
   )
 }
+// paddingX: "sm:px-16 px-6",
+//     paddingY: "sm:py-16 py-6",
+//     padding: "sm:px-16 px-6 sm:py-16 py-10",
 
 export default SectionWrapper(Works,"");
