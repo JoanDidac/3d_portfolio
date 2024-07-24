@@ -1,47 +1,66 @@
 import { motion } from 'framer-motion';
+import { useState , useEffect } from 'react';
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas'
+import { ComputersCanvas } from './canvas';
 
 const Hero = () => {
+
+  const [showGlow, setShowGlow] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowGlow(true);
+    }, 1500); // Time the flicker animation lasts
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className="relative w-full h-screen mx-auto">
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915eff]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+        <div className="flex flex-col justify-center items-center mt-5">
+          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}> Hi, I'm <span className='text-[#915eff]'> JoanDi </span>!</h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`} >
-          I develop 3D visuals, user <br className='sm:block hidden' />
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Hi, I'm <span className="text-[#915eff]">JoanDi</span>!
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            I develop 3D visuals, user <br className="sm:block hidden" />
             interfaces and web applications
           </p>
         </div>
       </div>
-      <ComputersCanvas/> 
+      <ComputersCanvas />
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center '>
-      <a href='#about'>
-        <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-          <motion.dev 
-          animate={{
-            y: [0, 24, 0],
-          }} 
-            transition={{
-              duration:1.5,
-              repeat: Infinity,
-              repeatType:'loop',
-            }}
-            className='w-3 h-3 rounded-full bg-secondary mb-1'
-          />
-
-          
+      {/* Scrolling text */}
+      {/* <div className="absolute bottom-0  w-full flex justify-center items-center ">
+      <div className=" ">
+          <h1 className={`translate-x-[-22px] translate-y-[-15px] text-2xl sm:text-2xl md:text-2xl lg:text-3xl font-thin tracking-widest ${showGlow ? 'neon-glow' : 'neon-flicker'}`}>
+          ⇪ Drag me &nbsp;  I'm 3D ⇪  &nbsp;
+          </h1>
         </div>
-      </a>
+      </div> */}
 
+      <svg className='translate-y-[-475px] translate-x-[-5px]' viewBox="0 0 1320 300">
+       <text x="50%" y="50%" dy=".35em" textAnchor="middle">
+       ⇪ Enjoy &nbsp; &nbsp; &nbsp;  Its 3D ⇪
+       </text>
+      </svg>  
+
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <motion.div
+              animate={{ y: [0, 24, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, repeatType: 'loop' }}
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
+            />
+          </div>
+        </a>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

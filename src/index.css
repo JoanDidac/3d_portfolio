@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
 
 @tailwind base;
 @tailwind components;
@@ -202,4 +203,47 @@
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+}
+
+
+svg {
+  font-family: 'Russo One', sans-serif;
+  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  position: absolute; 
+  width: 100%; height: 100%;
+  user-select: none;
+}
+svg text {
+  text-transform: uppercase;
+  animation: stroke 10s linear 2 alternate forwards;
+  animation-delay: 3s;
+  stroke-width: 2;
+  stroke:#804dee;
+  /* stroke: #365fa0; */
+  font-size: 90px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  visibility: hidden;
+}
+@keyframes stroke {
+  0%   {
+    visibility:visible;
+    fill: rgba(72,138,20,0); stroke: #f121f5;
+    stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
+  }
+  10%   {
+    fill: rgba(72,138,20,0); stroke: #f121f5;
+    stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
+  }
+  /* 70%  {fill: rgba(72,138,20,0); stroke: #804deec2; } */
+  80%  {fill: rgba(72,138,20,0); stroke: #7509f9; stroke-width: 1;}
+  90%  {fill: #7509f97c; stroke: #7509f9; stroke-width: 2;}
+  100% {
+    fill:   #f221f5a8; stroke: rgba(54,95,160,0); 
+    stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 3;
+    
+  }
+}
+
+svg {
+  user-select: none;
 }
