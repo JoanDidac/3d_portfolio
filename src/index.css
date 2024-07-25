@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Russo+One");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -215,35 +216,108 @@ svg {
 }
 svg text {
   text-transform: uppercase;
+  /* animation: stroke 10s linear 2 alternate forwards; */
   animation: stroke 10s linear 2 alternate forwards;
-  animation-delay: 3s;
+  animation-delay: 6s;
   stroke-width: 2;
   stroke:#804dee;
   /* stroke: #365fa0; */
   font-size: 90px;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-family: "Righteous"; */
+  font-weight:600;
   visibility: hidden;
 }
+
 @keyframes stroke {
   0%   {
+    text-shadow:2px 2px 15px #ce8bfb;
+    letter-spacing: -20px;
     visibility:visible;
     fill: rgba(72,138,20,0); stroke: #f121f5;
     stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
   }
   10%   {
+    text-shadow:0px 0px 10px #bf61ff;
     fill: rgba(72,138,20,0); stroke: #f121f5;
     stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
   }
   /* 70%  {fill: rgba(72,138,20,0); stroke: #804deec2; } */
-  80%  {fill: rgba(72,138,20,0); stroke: #7509f9; stroke-width: 1;}
+  80%  {letter-spacing: 0px; fill: rgba(72,138,20,0); stroke: #7509f9; stroke-width: 1;}
   90%  {fill: #7509f97c; stroke: #7509f9; stroke-width: 2;}
   100% {
-    fill:   #f221f5a8; stroke: rgba(54,95,160,0); 
+    text-shadow:0px 0px 2px #9606f6b9;
+    letter-spacing: 1px;
+    fill:   #f221f58c; stroke: rgba(54,95,160,0); 
     stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 3;
     
   }
 }
 
-svg {
-  user-select: none;
+ @media only screen and (max-width: 768px) {
+  svg text {
+    font-size: 295px !important; /* Increase font size for mobile devices and use !important to ensure it applies */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: 90%;
+    transform: translateY(-300px);
+    letter-spacing: -15px;
+    animation: stroke 3s linear 4 alternate forwards;
+    animation-delay: 7s;
+    
+    
+    
+    
+    
+  }
+  @keyframes stroke {
+    0%   {
+    
+      letter-spacing: -13px;
+      transform: translateY(-300px);
+      visibility:visible;
+      fill: rgba(72,138,20,0); stroke: #f121f5;
+      stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
+    }
+    10%   { 
+      text-shadow: 0px 0px 8px #ce8bfb;
+      fill: rgba(72,138,20,0); stroke: #f121f5;
+      stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    /* 70%  {fill: rgba(72,138,20,0); stroke: #804deec2; } */
+    80%  {text-shadow: 0px 0px 3px #ce8bfb; fill: rgba(72,138,20,0); stroke: #7509f9; stroke-width: 3;}
+    90%  {fill: #7509f97c; stroke: #7509f9; stroke-width: 2;}
+    100% {
+      text-shadow: 0px 0px 1px #ce8bfb;
+      letter-spacing: -25px;
+      transform: translateY(-500px);
+      fill:   #c800ff8a; stroke: rgba(54,95,160,0); 
+      stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 3;
+      
+    }
+} }
+
+/* Font for small devices */
+/* .righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.svg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.svg-container svg {
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -33,20 +33,13 @@ const Hero = () => {
       </div>
       <ComputersCanvas />
 
-      {/* Scrolling text */}
-      {/* <div className="absolute bottom-0  w-full flex justify-center items-center ">
-      <div className=" ">
-          <h1 className={`translate-x-[-22px] translate-y-[-15px] text-2xl sm:text-2xl md:text-2xl lg:text-3xl font-thin tracking-widest ${showGlow ? 'neon-glow' : 'neon-flicker'}`}>
-          ⇪ Drag me &nbsp;  I'm 3D ⇪  &nbsp;
-          </h1>
-        </div>
-      </div> */}
-
-      <svg className='translate-y-[-475px] translate-x-[-5px]' viewBox="0 0 1320 300">
+    <div className="svg-container ">
+      <svg viewBox="0 0 1320 300">
        <text x="50%" y="50%" dy=".35em" textAnchor="middle">
-       ⇪ Enjoy &nbsp; &nbsp; &nbsp;  Its 3D ⇪
+       ⇪ Enjoy &nbsp; It's 3D ⇪
        </text>
-      </svg>  
+      </svg> 
+    </div>   
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10">
         <a href="#about">
