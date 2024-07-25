@@ -60,9 +60,13 @@ return () => {
     >
     <Suspense fallback={<CanvasLoader/>}>
     <OrbitControls
-    enableZoom={false}
-    maxPolarAngle={Math.PI / 2} 
-    minPolarAngle={Math.PI / 2} 
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 1.5} // Allow some vertical movement
+          minPolarAngle={Math.PI / 3}   // Allow some vertical movement
+          enableRotate={true}           // Allow rotation around the object
+          enablePan={true}              // Allow panning
+          enableDamping={true}          // Enable smooth damping
+          dampingFactor={0.1}           // Set damping factor
     />
       <Computers isMobile={isMobile}/>
     </Suspense>
