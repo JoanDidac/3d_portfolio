@@ -265,6 +265,13 @@ svg text {
     
   }
 
+  .svg-element {
+  
+  
+    transform: translate(0%, -50%);
+    
+  }
+
   
   @keyframes stroke {
     0%   {
@@ -314,12 +321,6 @@ svg text {
   
 } */
 
-.svg-element {
-  /* border: 1px solid red; */
-  
-  /* transform: translate(0%, -50%); */
-  
-}
 
 
 
