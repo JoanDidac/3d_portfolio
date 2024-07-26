@@ -244,11 +244,11 @@ svg text {
     stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
   }
   /* 70%  {fill: rgba(72,138,20,0); stroke: #804deec2; } */
-  80%  {letter-spacing: 0px; fill: rgba(72,138,20,0); stroke: #7509f9; stroke-width: 1;}
-  90%  { fill: #7509f97c; stroke: #7509f9; stroke-width: 2;}
+  80%  { fill: rgba(72,138,20,0); stroke: #7509f9; stroke-width: 1;}
+  90%  {etter-spacing: 3px; fill: #7509f97c; stroke: #7509f9; stroke-width: 2;}
   100% {
     text-shadow:0px 0px 2px #9606f6b9;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     fill:   #f221f58c; stroke: rgba(54,95,160,0); 
     stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 3;
     
@@ -312,14 +312,7 @@ svg text {
   
 }
 
-/* .svg-container svg {
-  user-select: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  
-  
-} */
+
 
 
 
