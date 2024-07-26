@@ -39,16 +39,16 @@ const ServiceCard = ( { index, title, icon }) => {
 const About = () => {
   return (
     < >
-      <motion.div variants={textVariant} className='text-left ml-[90px] xs:ml-[15%]'>
+      <motion.div variants={textVariant} className='text-center'>
         <p className={styles.sectionSubText} >Introduction </p>
         <h2 className={styles.sectionHeadText}>Overview
         </h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='text-left mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] xs: ml-[15%] ' 
+        className=' text-center mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]' 
         >
-        My name is Joan Didac Hernandez 👋 <br/>
+        My name is Joan Dídac Hernandez 👋 <br/>
         I'm a full-stack web developer, leveraging my past experience in Facilities Management and the culinary industry to bring a unique perspective to tech solutions. 
       </motion.p>
        <div className='w-[100%] mt-16 flex flex-wrap items-center justify-center size-full  gap-10 xl:ml-[66.6px]  '  >

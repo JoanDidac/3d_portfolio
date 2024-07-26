@@ -9,7 +9,7 @@ import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({experience}) => (
   
-  <VerticalTimelineElement
+  <VerticalTimelineElement 
   contentStyle={{ background: '#1d1836', color: '#fff'}}
   contentArrowStyle={{ borderRight: '7px solid #232631'}}
   date={experience.date}
@@ -46,11 +46,11 @@ const ExperienceCard = ({experience}) => (
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className="xl:pl-[30.75%] md:pl-[17%] xs:pl-[10%] ">
-      <p className={styles.sectionSubText} > What have I done you ask ?</p>
-        <h2 className={styles.sectionHeadText} > Work Experience </h2>
+      <motion.div variants={textVariant()} className="text-center w-full ">
+      <p className={`${styles.sectionSubText} text-center xl:translate-x-[2.4em] `}> What have I done you ask ?</p>
+        <h2 className={`${styles.sectionHeadText} text-center xl:translate-x-[0.9em] xs:text-4xl xs:mt-3`} > Work Experience </h2>
       </motion.div>
-        <div className="xl:pl-[8%] pl-[100px] xs:pl-[0px] mt-20 flex flex-col " >
+        <div className=" mt-20 flex flex-col xs:translate-x-[-0.5em] " >
           <VerticalTimeline>
             {experiences.map((experience,index) => (
               <ExperienceCard key={index} experience={experience} />

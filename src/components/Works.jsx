@@ -16,7 +16,7 @@ const ProjectCard = ({ index, name , description, tags, image, source_code_link}
       scale: 1,
       speed: 450
      }} 
-     className="bg-tertiary p-5 rounded-2xl md:max-w-[360px] sm:w-[450px] w-full" >
+     className="bg-tertiary p-5 rounded-2xl md:max-w-[360px] xs:w-full w-full" >
       <div className='relative w-full h-[230px]' >
         <img 
         src={image}
@@ -67,10 +67,10 @@ const Works = () => {
   return (
     <>
       <motion.div className='text-center' variants={textVariant()}>
-      <p className={`${styles.sectionSubText} xs: ml-[-33px]`} > 
+      <p className={`${styles.sectionSubText} text-center xs:translate-x-[-1.1em] `} > 
         My Projects
          </p>
-        <h2 className={`${styles.sectionHeadText} xs: ml-[-33px]`}> 
+        <h2 className={`${styles.sectionHeadText} xs:translate-x-[-0.4em]`}> 
         Projects. </h2>
       </motion.div>
 
@@ -87,7 +87,7 @@ const Works = () => {
 
         </motion.p>
       </div>
-        <div className='xl:translate-x-[10] mt-20 flex flex-wrap gap-5 xs:min-w-[112%] xs:translate-x-[-35px]' >
+        <div className='  mt-20 flex flex-wrap gap-5 xl:translate-x-[0em]  xs:translate-x-[-2.4em] xs:min-w-[112%]  ' >
         {projects.map((project,index) => (
           <ProjectCard 
           key={`project-${index}`}
@@ -100,8 +100,6 @@ const Works = () => {
     </>
   )
 }
-// paddingX: "sm:px-16 px-6",
-//     paddingY: "sm:py-16 py-6",
-//     padding: "sm:px-16 px-6 sm:py-16 py-10",
+
 
 export default SectionWrapper(Works,"");

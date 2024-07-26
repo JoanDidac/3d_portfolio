@@ -65,7 +65,7 @@ const Contact = () => {
   }
  
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-1 overflow-hidden xs:w-full pr-8 ">
+    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden xs:w-full pr-0 ">
       <motion.div 
       variants={slideIn('left', "tween", 0.2, 1)}
       className="flex-[0.75] bg-black-100 p-8 rounded-2xl opacity-[90%] md:max-w-[900px] xs:w-full "
@@ -124,7 +124,7 @@ const Contact = () => {
 
       <motion.div 
         variants={slideIn('right', "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] xl:mr-[-1.75em] "
       
         >
         <EarthCanvas/>
@@ -135,4 +135,4 @@ const Contact = () => {
   )
 }
 
-export default SectionWrapper(Contact,'contact');
+export default SectionWrapper(Contact,'contact');  
