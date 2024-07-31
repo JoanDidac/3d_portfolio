@@ -220,7 +220,7 @@ svg text {
   text-transform: uppercase;
   /* animation: stroke 10s linear 2 alternate forwards; */
   animation: stroke 10s infinite alternate forwards;
-  animation-delay: 7s;
+  animation-delay: 3s;
   stroke-width: 2;
   stroke:#804dee;
   /* stroke: #365fa0; */
@@ -260,8 +260,8 @@ svg text {
     font-size: 295px; 
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: -15px;
-    animation: stroke 5s linear 4 alternate forwards;
-    animation-delay: 7s;
+    animation: stroke 5s infinite alternate forwards;
+    animation-delay: 3.5s;
     
   }
 

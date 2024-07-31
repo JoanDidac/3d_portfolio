@@ -123,7 +123,7 @@ import {
       company_name: "King",
       icon: king,
       iconBg: "#383E56",
-      date: " 2014 - December 2016",
+      date: "Dec 2014 - Dec 2016",
       points: [
         "I helped our team to provide a high standard service to our internal costumers and key stakeholders across three different offices over 8000sqm, ranked top 25 in the world.",
         "Collaborating with cross-functional teams including designers, project managers, and stake holders to create high-quality service consistently during the huge expansion from startup to Market Leader.",
@@ -137,7 +137,7 @@ import {
       company_name: "Typeform",
       icon: typeform,
       iconBg: "#E6DEDD",
-      date: "December 2016 - August 2022",
+      date: "Dec 2016 - Aug 2022",
       points: [
         "Actively involved in cross-functional project and facilities management initiatives.",
         "Planned and designed a transition strategy post Covid to transfer the workforce into a seamless and efficient remote work environment that caters to the needs of every employee and aligns with Typeform's core values and culture.  ",
@@ -147,7 +147,7 @@ import {
       ],
     },
     {
-      title: "Ironhack SullStack Course",
+      title: "Ironhack FullStack Course",
       company_name: "Ironhack",
       icon: ironhack,
       iconBg: "#E6DEDD",
@@ -164,7 +164,7 @@ import {
       company_name: "Amalgama-Digital Co.",
       icon: amalgama,
       iconBg: "#383E56",
-      date: "October 2022 - April 2024",
+      date: "Oct 2022 - Apr 2024",
       points: [
         "Designing, developing and maintaining web applications using React.js and other related technologies for https://amalgama.co/",
         "Collaborating with cross-functional international teams including designers, product managers, and other developers to create high-quality products.",

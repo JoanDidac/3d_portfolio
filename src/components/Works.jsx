@@ -68,7 +68,7 @@ const Works = () => {
     <>
       <motion.div className='text-center' variants={textVariant()}>
       <p className={`${styles.sectionSubText} text-center xs:translate-x-[-1.1em] `} > 
-        My Projects
+        My Projects.
          </p>
         <h2 className={`${styles.sectionHeadText} xs:translate-x-[-0.4em]`}> 
         Projects. </h2>
@@ -81,7 +81,7 @@ const Works = () => {
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to code repositories . It reflects my
+          links to code repositories .It reflects my
           ability to solve complex problems, work with different technologies,
           and manage projects effectively alone, as well as part of a team.
 

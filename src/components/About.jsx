@@ -6,9 +6,29 @@ import { services } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 
-const ServiceCard = ( { index, title, icon }) => {
+const isMobile = /iPhone|iPad|iPod|Android|BlackBerry|BB10|Silk|Mobi|Chrome/i.test(navigator.userAgent);
+
+const ServiceCard = ({ index, title, icon }) => {
+  const tiltOptions = isMobile
+    ? {
+        max: 25,
+        scale: 1.05,
+        speed: 300,
+        transition: true,
+        easing: 'cubic-bezier(.03,.98,.52,.99)',
+      }
+    : {
+        max: 45,
+        scale: 1,
+        speed: 450,
+        easing: 'cubic-bezier(.03,.98,.52,.99)',
+      };
+
+
+
+  
   return (
-    <Tilt className='xs:w-[143px] xl:w-[200px]   w-full ' >
+    <Tilt className='xs:w-[143px] xl:w-[200px]   w-full ' options={tiltOptions} >
     <motion.div 
      variants={ fadeIn('right', "spring", 0.5 * index, 0.75)}
      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -61,7 +81,7 @@ const About = () => {
 
 
     </>
-  )
-}
+  );
+};
 
-export default  SectionWrapper ( About, "about" )
+export default  SectionWrapper ( About, "about" );

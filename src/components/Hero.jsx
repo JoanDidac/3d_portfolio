@@ -36,7 +36,7 @@ const Hero = () => {
     <div className="svg-container ">
       <svg className='svg-element' viewBox="0 0 1320 300">
        <text x="50%" y="50%" dy=".35em" textAnchor="middle">
-       ⇪ Enjoy &nbsp; It's 3D ⇪
+       ⇪ Drag it &nbsp; #3D ⇪
        </text>
       </svg> 
     </div>   
