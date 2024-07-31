@@ -16,12 +16,12 @@ const App = () => {
         <div className="pl-[50px] ">
         <Tech />
         </div>
-        <div className="w-full  bg-primary  pl-14 ">
+        <div className="w-full  bg-primary  pl-4 ">
         <Works />
         <Feedbacks />
         </div>
         </div>
-        <div className=" w-full h-full  pl-[7%]  -mt-16 relative z-0 "> 
+        <div className=" w-full h-full xl:pl-[8em] -mt-16 relative z-0 "> 
         <Contact />
         <StarsCanvas />
         </div>

@@ -66,18 +66,18 @@ after:absolute after:inset-0 after:rounded-full after:ring-2 after:ring-pink-500
 const Works = () => {
   return (
     <>
-      <motion.div className='text-center' variants={textVariant()}>
-      <p className={`${styles.sectionSubText} text-center xs:translate-x-[-1.1em] `} > 
+      <motion.div className='text-center ' variants={textVariant()}>
+      <p className={`${styles.sectionSubText} text-center  `} > 
         My Projects.
          </p>
-        <h2 className={`${styles.sectionHeadText} xs:translate-x-[-0.4em]`}> 
+        <h2 className={`${styles.sectionHeadText} `}> 
         Projects. </h2>
       </motion.div>
 
       <div className='w-full justify-center flex xs:mx-[-20px] p-0'>
         <motion.p
         variants={fadeIn ('','',0.1,1)}
-        className='mt-10 text-center text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-10 text-center text-secondary text-[17px] max-w-3xl leading-[30px] xs:ml-[2em]'
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -87,7 +87,7 @@ const Works = () => {
 
         </motion.p>
       </div>
-        <div className='  mt-20 flex flex-wrap gap-5 xl:translate-x-[0em]  xs:translate-x-[-2.4em] xs:min-w-[112%]  ' >
+        <div className='  mt-20 flex flex-wrap gap-5 xl:translate-x-[1em]' >
         {projects.map((project,index) => (
           <ProjectCard 
           key={`project-${index}`}
