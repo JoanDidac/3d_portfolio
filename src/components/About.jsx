@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 
 const ServiceCard = ( { index, title, icon }) => {
   return (
-    <Tilt className='xs:w-[250px] w-full ' >
+    <Tilt className='xs:w-[143px] xl:w-[200px]   w-full ' >
     <motion.div 
      variants={ fadeIn('right', "spring", 0.5 * index, 0.75)}
      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -47,10 +47,10 @@ const About = () => {
       <div className='flex justify-center items-center xl:translate-x-[4em] '>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className=' w-full h-full text-center  mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-center' 
+        className=' w-full h-full text-center sm:grid-cols-2 mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-center' 
         >
-        My name is Joan Dídac Hernandez 👋 <br/>
-        I'm a full-stack web developer, leveraging my past experience in Facilities Management and the culinary industry to bring a unique perspective to tech solutions. 
+         My name is Joan Dídac Hernandez 👋 <br/>
+         Born and raised in Barcelona, I'm a Full-Stack developer with a rich background in Facilities Management and the culinary industry. Father of a 5-year-old tornado and an enthusiast of music and technology, I bring a unique , diverse and fresh perspective to tech solutions. Known for embracing challenges and driven by a passion for innovation. Let's connect and create.
       </motion.p>
       </div>
        <div className='w-[100%] mt-16 flex flex-wrap items-center justify-center size-full  gap-10 xl:ml-[66.6px]  '  >
