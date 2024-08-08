@@ -6,17 +6,17 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center xs:bg-[length:952px_932px]">
         <Navbar />
         <Hero />
         </div>
-        <div className="   mx-[20px] z-0 bg-primary ">
+        <div className="xl:translate-x-[-10px]   mx-[20px] z-0 bg-primary ">
         <About />
         <Experience />
-        <div className="pl-[50px] ">
+        <div className="pl-[2em] ">
         <Tech />
         </div>
-        <div className="w-full  bg-primary  pl-4 ">
+        <div className="w-full  bg-primary  ">
         <Works />
         <Feedbacks />
         </div>
