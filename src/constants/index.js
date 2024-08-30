@@ -164,7 +164,7 @@ import {
       company_name: "Amalgama-Digital Co.",
       icon: amalgama,
       iconBg: "#383E56",
-      date: "Oct 2022 - Apr 2024",
+      date: "Oct 2022 - To Present",
       points: [
         "Designing, developing and maintaining web applications using React.js and other related technologies for https://amalgama.co/",
         "Collaborating with cross-functional international teams including designers, product managers, and other developers to create high-quality products.",
