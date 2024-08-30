@@ -275,18 +275,19 @@ svg text {
   
   @keyframes stroke {
     0%   {
+      
       letter-spacing: -13px;
       visibility:visible;
       fill: rgba(72,138,20,0); stroke: #f121f5;
       stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
     }
     10%   { 
-      text-shadow: 0px 0px 8px #ce8bfb;
+      text-shadow: 0px 0px 1px #c800ff;
       fill: rgba(72,138,20,0); stroke: #f121f5;
       stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
     }
     /* 70%  {fill: rgba(72,138,20,0); stroke: #804deec2; } */
-    80%  {text-shadow: 0px 0px 3px #ce8bfb; fill: rgba(72,138,20,0); stroke: #7509f9; stroke-width: 3;}
+    80%  {text-shadow: 0px 0px 2px #ce8bfb; fill: rgba(72,138,20,0); stroke: #7509f9; stroke-width: 2;}
     90%  {fill: #7509f97c; stroke: #7509f9; stroke-width: 2;}
     100% {
       text-shadow: 0px 0px 1px #311042;

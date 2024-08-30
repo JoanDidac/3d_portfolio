@@ -77,7 +77,7 @@ const Works = () => {
       <div className='w-full justify-center flex xs:mx-[-20px] p-0'>
         <motion.p
         variants={fadeIn ('','',0.1,1)}
-        className='mt-10 text-center text-secondary text-[17px] max-w-3xl leading-[30px] xs:ml-[2em]'
+        className='mt-10 text-center text-secondary text-[17px] max-w-3xl leading-[30px] xs:ml-[2em] '
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with

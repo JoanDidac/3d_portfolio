@@ -13,7 +13,7 @@ const App = () => {
         <div className="xl:translate-x-[-10px]   mx-[20px] z-0 bg-primary ">
         <About />
         <Experience />
-        <div className="pl-[2em] xl:ml-[3em]">
+        <div className="pl-[2em] xl:ml-[3em] translate-x-[-15px] xs:translate-x-[2px]">
         <Tech />
         </div>
         <div className="w-full  bg-primary  xl:ml-[4em]">
