@@ -19,7 +19,7 @@ const App = () => {
         <div className="w-full  bg-primary  xl:ml-[4em]">
         <Works />
         </div>
-        <div className="pl-3 xl:translate-x-[.9em]">
+        <div className="pl-3 xl:translate-x-[.9em]  ">
         <Feedbacks />
         </div>
         </div>
