@@ -19,8 +19,9 @@ const App = () => {
         <div className="w-full  bg-primary  xl:ml-[4em]">
         <Works />
         </div>
+        <div className="pl-3 xl:translate-x-[.9em]">
         <Feedbacks />
-        
+        </div>
         </div>
         <div className=" w-full h-full xl:pl-[8em] -mt-16 relative z-0 "> 
         <Contact />
