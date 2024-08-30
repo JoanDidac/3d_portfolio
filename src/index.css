@@ -289,10 +289,10 @@ svg text {
     80%  {text-shadow: 0px 0px 3px #ce8bfb; fill: rgba(72,138,20,0); stroke: #7509f9; stroke-width: 3;}
     90%  {fill: #7509f97c; stroke: #7509f9; stroke-width: 2;}
     100% {
-      text-shadow: 0px 0px 1px #ce8bfb;
-      letter-spacing: -25px;
+      text-shadow: 0px 0px 1px #311042;
+      letter-spacing: -24px;
       /* transform: translateY(-500px); */
-      fill:   #c800ff8a; stroke: rgba(54,95,160,0); 
+      fill:   #c800ff8a; stroke: rgb(37, 117, 247); 
       stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 3;
       
     }

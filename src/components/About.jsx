@@ -61,7 +61,7 @@ const About = () => {
     < >
       <motion.div variants={textVariant} className='xl:translate-x-[4em] text-center'>
         <p className={`${styles.sectionSubText}`}>Introduction </p>
-        <h2 className={`${styles.sectionHeadText}xl:translate-x-[4em]`}>Overview.
+        <h2 className={`${styles.sectionHeadText}xl:translate-x-[4em] text-[2em]`}>Overview.
         </h2>
       </motion.div>
       <div className='flex justify-center items-center xl:translate-x-[4em] '>
