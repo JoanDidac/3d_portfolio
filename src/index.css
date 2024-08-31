@@ -245,7 +245,7 @@ svg text {
   }
   /* 70%  {fill: rgba(72,138,20,0); stroke: #804deec2; } */
   80%  { fill: rgba(72,138,20,0); stroke: #7509f9; stroke-width: 1;}
-  90%  {etter-spacing: 3px; fill: #7509f97c; stroke: #7509f9; stroke-width: 2;}
+  90%  {letter-spacing: 3px; fill: #7509f97c; stroke: #7509f9; stroke-width: 2;}
   100% {
     text-shadow:0px 0px 2px #9606f6b9;
     letter-spacing: 3px;
