@@ -68,6 +68,7 @@ return () => {
           enablePan={true}              // Allow panning
           enableDamping={true}          // Enable smooth damping
           dampingFactor={0.1}           // Set damping factor
+          
     />
       <Computers isMobile={isMobile}/>
     </Suspense>
