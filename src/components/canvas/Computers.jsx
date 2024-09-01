@@ -26,7 +26,8 @@ const Computers = ({isMobile}) => {
       object={computer.scene}
       scale={isMobile ? 0.35 :  0.73}
       position={isMobile ? [ 0 , -1.5, -0.5] : [ 0, -2.85, -1.5]}
-      rotation= {isMobile ? [0, -0.2, -0.1,] : [-0.01, -0.2, -0.1]}
+      // rotation= {isMobile ? [0, -0.2, -0.1,] : [-0.01, -0.2, .18]}
+      rotation= {isMobile ? [0, -0.2, -0.1,] : [0.001, -0.2, -0.1]}
       /> 
     </mesh>
   )
@@ -55,7 +56,7 @@ return () => {
     style={{ userSelect: 'auto' }}
     frameloop="demand"
     shadows
-    camera={{ position: [20, 3, 5], fov: 25}}
+    camera={{ position: [20, -3, 5], fov: 25}}
     gl={{ preserveDrawingBuffer: true}}
     >
     <Suspense fallback={<CanvasLoader/>}>
