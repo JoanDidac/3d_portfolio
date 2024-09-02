@@ -314,19 +314,6 @@ svg text {
 }
 
 
-/* 3D Balls in Tech.jsx Tooltip config. */
-.custom-tooltip {
-  background-color: #ff0000; /* Black background */
-  color: #fff; /* White text */
-  border-radius: 4px;
-  padding: 8px 12px;
-  font-size: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  opacity: 1 !important; /* Ensure tooltip is fully opaque */
-  visibility: visible !important; /* Ensure tooltip is visible */
-  z-index: 9999; /* Ensure tooltip appears above other elements */
-}
 
 
 

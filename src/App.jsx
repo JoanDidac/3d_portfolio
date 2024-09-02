@@ -16,7 +16,7 @@ const App = () => {
         <div className="pl-[2em] xl:ml-[3em] translate-x-[-15px] xs:translate-x-[2px]">
         <Tech />
         </div>
-        <div className="w-full  bg-primary  xl:ml-[4em]">
+        <div className="w-full  bg-primary  xl:pl-[4.3em]">
         <Works />
         </div>
         <div className="pl-3 xl:translate-x-[.9em]  ">
