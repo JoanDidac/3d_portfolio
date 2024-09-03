@@ -50,7 +50,7 @@ const Experience = () => {
       <p className={`${styles.sectionSubText} text-center xl:translate-x-[2.6em] `}> What have I done you ask ?</p>
         <h2 className={`${styles.sectionHeadText} xl:translate-y-[0px] text-center xl:translate-x-[1em] xs:text-4xl xs:mt-8 xs:-mb-12 xl:mb-12`} > Work Experience. </h2>
       </motion.div>
-        <div className=" mt-20 flex flex-col xs:translate-x-[-0.5em] md:translate-x-[4.4em]" >
+        <div className=" mt-20 flex flex-col xl:translate-x-[4.9vw] xs:translate-x-[-0.5em] md:translate-x-[0vw] " >
           <VerticalTimeline>
             {experiences.map((experience,index) => (
               <ExperienceCard key={index} experience={experience} />

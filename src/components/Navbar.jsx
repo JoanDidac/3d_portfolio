@@ -48,12 +48,12 @@ onClick={() => {
  }
 }
 >
-<img src={logo} alt='logo' className='w-10 h-10 object-contain'/>
-<p className=' text-white text-[18px] font-bold cursor-pointer flex '>JoanDîdac &nbsp;<span className='sm:block hidden'>|&nbsp;&nbsp;Web Developer</span></p>
+<img src={logo} alt='logo' className='w-10 h-10 object-contain translate-x-[-1em]'/>
+<p className='translate-x-[-1em] text-white text-[18px] font-bold cursor-pointer flex '>JoanDîdac &nbsp;<span className='sm:block hidden'>|&nbsp;&nbsp;Web Developer</span></p>
 </Link>
 
 {/* Gear Icon for Modal */}
-<div className="flex items-center gap-5 gear-icon xl:translate-x-[-2.3em] xs:translate-x-[0.1em]">
+<div className="flex items-center gap-5 gear-icon xl:translate-x-[-2.3em] md:translate-x-[-2.3em] xs:translate-x-[0.1em]">
           <div
             className="cursor-pointer "
             onClick={handleModalToggle}
@@ -68,10 +68,10 @@ onClick={() => {
 
           {/* Modal */}
           {showModal && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-              <div className="bg-white p-8 rounded-lg max-w-sm w-full">
-                <h2 className="text-lg font-bold mb-4 text-center text-primary">How to Interact</h2>
-                <p className="mb-2  text-tertiary">
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 ">
+              <div className="bg-[#d0ccee] p-8 rounded-lg max-w-sm w-full">
+                <h2 className="text-lg font-bold mb-4 text-center text-primary">3D Interactions</h2>
+                <p className="mb-2  text-primary">
                   <strong>Desktop:</strong> Click on the 3D elements to turn them and hover over the cards to tilt them to your cursor position.
                 </p>
                 <p className="mb-2  text-tertiary">
@@ -81,10 +81,10 @@ onClick={() => {
                   <strong>Phone:</strong> Tap and drag the 3D elements to move them, Tap 2 times on the card's corner to tilt them to the tap position.
                 </p>
                 <button
-                  className="w-full py-2 mt-4 bg-black text-white rounded-lg hover:bg-gray-800"
+                  className="w-full py-2 mt-4 bg-gradient-to-r from-[#734995ab] to-[#a267ff] text-[#efe4ff] rounded-lg shadow-md border-.5 border-transparent hover:bg-gradient-to-l hover:from-[#682c84] hover:to-[#a267ff] hover:text-white hover:font-medium hover:border-[#efe4ff] hover:shadow-lg hover:scale-105 transition-all duration-500 ease-in-out"
                   onClick={handleModalToggle}
                 >
-                  Close
+                  X
                 </button>
               </div>
             </div>

@@ -59,12 +59,12 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     < >
-      <motion.div variants={textVariant} className='xl:translate-x-[4em] text-center'>
+      <motion.div variants={textVariant} className='xl:translate-x-[5vw] text-center'>
         <p className={`${styles.sectionSubText}`}>Introduction </p>
         <h2 className={`${styles.sectionHeadText}xl:translate-x-[4em] text-[2em]`}>Overview.
         </h2>
       </motion.div>
-      <div className='flex justify-center items-center xl:translate-x-[4em] '>
+      <div className='flex justify-center items-center xl:translate-x-[5vw] '>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className=' w-full h-full text-center sm:grid-cols-2 mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-center' 
@@ -73,7 +73,7 @@ const About = () => {
          Born and raised in Barcelona, I'm a Full-Stack developer with a rich background in Facilities Management and the culinary industry. Father of a 5-year-old tornado and an enthusiast of music and technology, I bring a unique , diverse and fresh perspective to tech solutions. Known for embracing challenges and driven by a passion for innovation. Let's connect and create.
       </motion.p>
       </div>
-       <div className='w-[100%] mt-16 flex flex-wrap items-center justify-center size-full  gap-10 xl:ml-[66.6px]  '  >
+       <div className='w-[100%] mt-16 flex flex-wrap items-center justify-center size-full  gap-10  xl:ml-[5vw]'  >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} /> //To change the content refer to const services in index.js
         ))}
