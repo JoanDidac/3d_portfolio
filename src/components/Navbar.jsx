@@ -35,7 +35,7 @@ const Navbar = () => {
     <nav 
      className={`${styles.paddingX} 
      w-full flex items-center py-5 fixed top-0 z-20  
-     ${ scrolled ? "bg-primary" : 'bg-trasnparent'}`}
+     ${ scrolled ? "bg-[#020018ef]" : 'bg-trasnparent'}`}
 
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -53,7 +53,7 @@ onClick={() => {
 </Link>
 
 {/* Gear Icon for Modal */}
-<div className="flex items-center gap-5 gear-icon xl:translate-x-[-2.2em] xs:translate-x-[0.1em]">
+<div className="flex items-center gap-5 gear-icon xl:translate-x-[-2.3em] xs:translate-x-[0.1em]">
           <div
             className="cursor-pointer "
             onClick={handleModalToggle}

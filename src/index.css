@@ -301,7 +301,7 @@ svg text {
 
 .svg-container {
   position: absolute;
-  
+  /* color:#020018ef; */
   top: 80%;
   left: auto;
   width: 100%;
