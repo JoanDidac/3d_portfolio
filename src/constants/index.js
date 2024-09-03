@@ -1,5 +1,7 @@
 //THIS IS THE SOURCE OF CONTENT , CHANGE IT HERE AND GETS REFERENCES AVERYWHERE//
 
+import gear from '../assets/gear.svg';
+
 import {
     mobile,
     backend,
@@ -25,6 +27,7 @@ import {
     foodfolio,
     ninja,
     threejs,
+    
   } from "../assets";
   
   export const navLinks = [
@@ -114,6 +117,7 @@ import {
       name: "postman",
       icon: postman,
     },
+
     
   ];
   

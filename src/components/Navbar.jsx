@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo , menu, close } from '../assets' ;
+import gear from '../assets/gear.svg';
+
 
 const Navbar = () => {
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +27,9 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   },   []) ;
+  const handleModalToggle = () => {
+    setShowModal(!showModal);
+  };
   
   return (
     <nav 
@@ -44,6 +51,46 @@ onClick={() => {
 <img src={logo} alt='logo' className='w-10 h-10 object-contain'/>
 <p className=' text-white text-[18px] font-bold cursor-pointer flex '>JoanDîdac &nbsp;<span className='sm:block hidden'>|&nbsp;&nbsp;Web Developer</span></p>
 </Link>
+
+{/* Gear Icon for Modal */}
+<div className="flex items-center gap-5 gear-icon xl:translate-x-[-2.2em] xs:translate-x-[0.1em]">
+          <div
+            className="cursor-pointer "
+            onClick={handleModalToggle}
+          >
+             <img
+      src={gear}
+      alt="Gear Icon"
+      className={` w-11 h-11 ${showModal ? 'rotate-90' : ''} hover:rotate-[360deg] hover:scale-150 transition-transform duration-[1000ms] `}
+    />
+  </div>
+          </div>
+
+          {/* Modal */}
+          {showModal && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+              <div className="bg-white p-8 rounded-lg max-w-sm w-full">
+                <h2 className="text-lg font-bold mb-4 text-center text-primary">How to Interact</h2>
+                <p className="mb-2  text-tertiary">
+                  <strong>Desktop:</strong> Click on the 3D elements to turn them and hover over the cards to tilt them to your cursor position.
+                </p>
+                <p className="mb-2  text-tertiary">
+                  <strong>Laptop:</strong> Grab with one finger to move 3D elements, Grab with 2 fingers to move the element on its X and Y Axis.
+                </p>
+                <p className="mb-4  text-tertiary">
+                  <strong>Phone:</strong> Tap and drag the 3D elements to move them, Tap 2 times on the card's corner to tilt them to the tap position.
+                </p>
+                <button
+                  className="w-full py-2 mt-4 bg-black text-white rounded-lg hover:bg-gray-800"
+                  onClick={handleModalToggle}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
+
+{/* Burger Menu */}
 <ul className='list-none hidden sm:flex flex-row gap-10'>
   {navLinks.map((link)=> (
     <li
@@ -91,8 +138,10 @@ onClick={() => setToggle(!toggle)}
 </div>
 </div>
       </div>
+      
     </nav>
-  )
-}
+  );
+};
+
 
 export default Navbar
