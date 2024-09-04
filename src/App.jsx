@@ -23,7 +23,7 @@ const App = () => {
         <Feedbacks />
         </div>
         </div>
-        <div className=" w-full h-full xl:translate-x-[8vw] -mt-16 relative z-0 "> 
+        <div className=" w-full h-full -mt-16 relative z-0 "> 
         <Contact />
         <StarsCanvas />
         </div>
